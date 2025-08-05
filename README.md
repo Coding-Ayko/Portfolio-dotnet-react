@@ -1,15 +1,15 @@
-# Portfólio Fullstack
+
 
 Projeto de estudo e portfólio desenvolvido em **React (Vite)** no frontend e **.NET 9 Web API** no backend.  
 O objetivo é consolidar conhecimentos em **fullstack development** com uma aplicação moderna e escalável.
 
-## Tecnologias
+### Tecnologias
 
 - **Frontend**: React (Vite, Hooks, Fetch API)
 - **Backend**: .NET 9 Web API (Controllers, REST)
 - **Linguagens**: C#, JavaScript
 
-## Estrutura do Projeto
+### Estrutura do Projeto
 
 ```bash
 Portfolio/
