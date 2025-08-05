@@ -1,26 +1,23 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Projects from "./pages/Projects";
+import DetailsProject from "./pages/DetailsProject";
 
 function App() {
-  const [projetos, setProjetos] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5151/api/projetos")
-      .then((res) => res.json())
-      .then((data) => setProjetos(data))
-      .catch((err) => console.error("Erro API:", err));
-  }, []);
-
   return (
-    <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
-      <h1>Meus Projetos</h1>
-      <ul>
-        {projetos.map((p) => (
-          <li key={p.id}>
-            <strong>{p.nome}</strong> — {p.descricao}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Router>
+      <nav>
+        <Link to="/">Dashboard</Link> |{" "}
+        <Link to="/projects">Projetos</Link> |{" "}
+
+      </nav>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<DetailsProject />} />
+
+      </Routes>
+    </Router>
   );
 }
 
