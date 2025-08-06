@@ -5,23 +5,6 @@ O objetivo é consolidar conhecimentos em **fullstack development** com uma apli
 
 ### Tecnologias
 
-- **Frontend**: React (Vite, Hooks, Fetch API)
-- **Backend**: .NET 9 Web API (Controllers, REST)
+- **Frontend**: React 
+- **Backend**: .NET 9 Web API
 - **Linguagens**: C#, JavaScript
-
-### Estrutura do Projeto
-
-```bash
-Portfolio/
-│
-├── PortfolioAPI/         # Backend em .NET
-│   ├── Controllers/      # Controllers da API
-│   ├── Program.cs        # Configuração da aplicação
-│   └── ...
-│
-├── portfolio-frontend/   # Frontend em React (Vite)
-│   ├── src/              # Código fonte
-│   ├── package.json
-│   └── ...
-│
-└── README.md             # Este arquivo
